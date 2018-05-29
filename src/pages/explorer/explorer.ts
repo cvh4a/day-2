@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-login',
@@ -8,8 +9,8 @@ import { NavController } from 'ionic-angular';
 export class ExplorerPage {
 
   constructor(public navCtrl: NavController) {
-
-
-
+  }
+  navigateToHomePage() {
+    this.navCtrl.push(HomePage);
   }
 }
