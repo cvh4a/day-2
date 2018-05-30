@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Charities Browser
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <p>
+        Welcome!
+    </p>
+    <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+          {{ item.name }}
+        </button>  
+      </ion-list>
+  </ion-content>
+  

@@ -8,12 +8,14 @@ import {ExplorerPage } from '../explorer/explorer';
 })
 export class LoginPage {
 
+  username: string;
+
   constructor(public navCtrl: NavController) {
 
   }
 
   navigateToExplorer() {
-    this.navCtrl.push(ExplorerPage);
+    this.navCtrl.push(ExplorerPage, {username: this.username});
   }
 
 }
